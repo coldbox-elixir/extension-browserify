@@ -1,7 +1,7 @@
 {
-  "name": "laravel-elixir-browserify-official",
+  "name": "coldbox-elixir-browserify-official",
   "version": "0.1.3",
-  "description": "Laravel Elixir Browserify Integration",
+  "description": "ColdBox Elixir Browserify Integration",
   "main": "browserify.js",
   "dependencies": {
     "babel-preset-es2015": "^6.9.0",
@@ -16,10 +16,16 @@
     "watchify": "^3.7.0"
   },
   "keywords": [
-    "laravel",
+    "coldbox",
     "elixir",
     "browserify"
   ],
   "author": "Jeffrey Way",
+  "contributors": [
+    {
+      "name": "Eric Peterson",
+      "email": "eric@elpete.com"
+    }
+  ],
   "license": "MIT"
 }

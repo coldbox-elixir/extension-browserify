@@ -1,4 +1,4 @@
-var Elixir = require('laravel-elixir');
+var Elixir = require('coldbox-elixir');
 var gulp = require('gulp');
 var config = Elixir.config;
 var browserify = require('browserify');
