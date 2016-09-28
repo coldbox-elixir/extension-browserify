@@ -1,6 +1,6 @@
 {
   "name": "coldbox-elixir-browserify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ColdBox Elixir Browserify Extension",
   "repository": {
     "type" : "git",
