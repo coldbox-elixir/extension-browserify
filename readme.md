@@ -37,4 +37,48 @@ elixir( function( mix ) {
 } );
 ```
 
-That's it! [Refer to the ColdBox Elixir documentation for more details](https://coldbox-elixir.ortusbooks.com/).
+### Custom Options
+
+The fourth argument to the `browserify` method is an `options` object that will be passed through to the browserify task.
+
+```js
+
+elixir( function( mix ){
+
+ mix.browserify( 'main.js', 'includes/javascripts/main.js', 'public/js', {} );
+
+} );
+
+```
+
+### Custom Transformers
+
+While Browserify ships with the [Partialify](https://www.npmjs.com/package/partialify) and [Babelify](https://github.com/babel/babelify) transformers, you're free to install and add more if you wish by doing 2 simple steps:
+
+1. Install the transformer
+
+```
+
+npm install aliasify --save-dev
+
+```
+
+2. update your `Gulpfile.js` by pushing the new transformer configuration via the `elixir.config.js.browserify.transformers` array:
+
+```js
+
+elixir.config.js.browserify.transformers.push( {
+
+ name : 'aliasify',
+
+ options : {}
+
+} );
+
+elixir( function( mix ){
+
+ mix.browserify( 'main.js' );
+
+} );
+
+```
