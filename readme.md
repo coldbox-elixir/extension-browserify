@@ -1,6 +1,6 @@
 # ColdBox Elixir Browserify Support
 
-## Step 1: Install
+### Step 1: Install
 
 First ensure, that you're ColdBox Elixir version is up to date. It should be at least version 2 or newer.
 
@@ -8,7 +8,7 @@ First ensure, that you're ColdBox Elixir version is up to date. It should be at 
 npm install coldBox-elixir-browserify --save-dev
 ```
 
-## Step 2: Use It
+### Step 2: Use It
 
 ```js
 // Gulpfile.js
@@ -37,7 +37,7 @@ elixir( function( mix ) {
 } );
 ```
 
-### Custom Options
+#### Custom Options
 
 The fourth argument to the `browserify` method is an `options` object that will be passed through to the browserify task.
 
@@ -51,7 +51,7 @@ elixir( function( mix ){
 
 ```
 
-### Custom Transformers
+#### Custom Transformers
 
 While Browserify ships with the [Partialify](https://www.npmjs.com/package/partialify) and [Babelify](https://github.com/babel/babelify) transformers, you're free to install and add more if you wish by doing 2 simple steps:
 
@@ -82,3 +82,11 @@ elixir( function( mix ){
 } );
 
 ```
+
+## Contributions and Bugs
+
+Project tracking for this project can be found at the [Ortus Solutions Jira](https://ortussolutions.atlassian.net/projects/ELIXIR/summary).  Please log all bugs, improvements, and features there.
+
+Pull requests are welcome and encouraged.  Please [check on the Jira page](https://ortussolutions.atlassian.net/projects/ELIXIR/issues/?filter=allissues) before starting any large amount of work so your time isn't wasted.
+
+Brad Wood (@bdw429s) has a [great guide on submitting pull requests.](https://www.ortussolutions.com/blog/submit-your-first-pull-request-to-an-open-source-project)  If you are unsure where to go, in need of help, or have a question, come ask in the #box-products channel on the [CFML Slack](http://cfml-slack.herokuapp.com/).
